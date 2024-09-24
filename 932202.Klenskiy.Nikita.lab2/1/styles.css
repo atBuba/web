@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #e0e0e0;
+    border: 1px solid #a0a0a0;
+    padding: 10px;
+    text-align: left; /* Прижимаем текст к левому краю */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.container {
+    margin-top: 60px; /* Отступ сверху, чтобы контейнер не перекрывал заголовок */
+    display: flex;
+}
+
+.left-column {
+    width: 200px; /* Фиксированная ширина 200px */
+    background-color: #d5f5d5;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 60px; /* 60px - высота заголовка */
+    left: 0;
+    bottom: 0;
+    overflow-y: auto; /* Добавить прокрутку при большом содержимом */
+}
+
+.content-column {
+    margin-left: 220px; /* Отступ слева (ширина left-column 200px + 20px для отступа) */
+    padding: 10px;
+    box-sizing: border-box;
+    flex-grow: 1; /* Делаем эту колонку Fluid */
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+}

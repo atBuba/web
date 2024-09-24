@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear Boxes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .float-box {
+            background-color: #00FF00; /* Зеленый цвет */
+            width: 200px;
+            height: 100px;
+            float: left;
+            margin: 20px 0 10px 20px;
+            box-sizing: border-box; /* Учитываем padding в общей ширине и высоте */
+        }
+
+        .clear-box {
+            background-color: #FFDAB9; /* Персиковый цвет */
+            width: 100%;
+            margin-top: 10px; /* Просвет в 10 пикселей */
+            clear: left;
+            box-sizing: border-box;
+        }
+
+        p {
+            margin: 0;
+            padding: 5px; /* Смещение текста от левого верхнего угла */
+        }
+    </style>
+</head>
+<body>
+    <div class="float-box">
+        <p>It's a float box</p>
+    </div>
+    <div class="clear-box">
+        <p>It's a box with clear property</p>
+    </div>
+</body>
+</html>

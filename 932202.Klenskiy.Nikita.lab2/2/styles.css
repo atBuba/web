@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #e0e0e0;
+    border: 1px solid #a0a0a0;
+    padding: 10px;
+    text-align: left; /* Прижимаем текст к левому краю */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+    height: 80px;
+}
+
+.container {
+    margin-top: 60px; /* Отступ сверху, чтобы контейнер не перекрывал заголовок */
+    display: flex;
+}
+
+.left-column {
+    width: 25%; /* Фиксированная ширина 200px */
+    background-color: #d5f5d5;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 60px; /* 60px - высота заголовка */
+    left: 0;
+    bottom: auto;
+    overflow-y: auto; /* Добавить прокрутку при большом содержимом */
+}
+
+.content-column {
+    margin-left: 25%; 
+    margin-right: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-grow: 1; /* Делаем эту колонку Fluid */
+}
+.right-column {
+    width: 200px; /* Фиксированная ширина 200px */
+    background-color: yellow; /* Желтый фон */
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 60px; /* 60px - высота заголовка */
+    right: 0; /* Размещаем колонку справа */
+    bottom: auto; /* Убираем bottom для автоматической высоты */
+    overflow-y: auto; /* Добавить прокрутку при большом содержимом */
+}
+
+
+h1, h2 {
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+}
