@@ -1,0 +1,10 @@
+* {
+    margin: 5px;
+}
+
+.content {
+    background-color: blue;
+    color: white;
+    width: 600px;
+    margin: auto;
+}

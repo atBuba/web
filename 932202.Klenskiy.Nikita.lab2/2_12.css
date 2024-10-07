@@ -1,0 +1,32 @@
+.blueBlock {
+    background-color: aqua;
+    border: green 2px solid;
+}
+
+.blockOne {
+    float: left;
+    background-color: bisque;
+    height: 80px;
+    width: 300px;
+}
+
+@media (min-width: 700px) {
+    .blockTwo {
+        background-color: darkgray;
+        margin-left: 305px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 699px) {
+    .blockOne {
+        width: 120px;
+    }
+
+    .blockTwo {
+        margin-top: 5em;
+        width: 360px;
+        background-color: darkgray;
+        clear: left;
+    }
+}
