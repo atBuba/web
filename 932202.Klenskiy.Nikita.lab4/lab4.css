@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width: 1000px) {
+    aside {
+	display: none;
+    }
+}
+
+@media(max-width: 850px) {
+    main {
+        flex-direction: column;
+    }
+
+    .posts {
+	margin-left: auto;
+        margin-right: auto;
+	margin-bottom: 30px;
+    }
+
+    .leftMenu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 450px !important;
+        margin-left: auto;
+	margin-right: auto;
+        margin-bottom: 0px;
+	margin-top: 50px;
+    }
+
+    .leftMenu li {
+        margin-bottom: 5px !important;
+        margin-top: 0 !important;
+    }
+
+    aside {
+	display: none;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica;
+    background-color: #edeef0;
+}
+
+header {
+    background-color: #507299;
+    position: fixed;
+    width: 100%;
+    height: 45px;
+}
+
+header img {
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+.post {
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    text-align: justify;
+    width: 425px;
+    padding: 20px;
+}
+
+.post img {
+    max-width: 100%;
+}
+
+.post p + .afterPostText {
+    border-top: 3px solid #d0d0d0;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.post img + .afterPostText {
+    border-top: 3px solid #d0d0d0;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.postWithHeader p + .afterPostText {
+    border-top: 3px solid #d0d0d0;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.post p::selection {
+    background-color: #e1e5eb;
+    color: green;
+}
+
+.afterPostText {
+    display: flex;
+    justify-content: space-between;
+    color: #507299;
+}
+
+.afterPostText p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.postWithHeader {
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    text-align: justify;
+    width: 465px;
+}
+
+.postWithHeader h3 {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.postWithHeader hr {
+    margin-top: 10px;
+    border-top: 2px solid;
+    border-color: #d0d0d0;
+}
+
+.postWithHeader p {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.postWithHeader p::selection {
+    background-color: #e1e5eb;
+    color: green;
+}
+
+.postWithHeader h3::selection {
+    background-color: #e1e5eb;
+    color: green;
+}
+
+.postWithHeader .afterPostText {
+    padding-bottom: 10px;
+}
+
+.leftMenu {
+    color: #507299;
+    width: 200px;
+    margin-top: 50px;
+}
+
+.leftMenu li {
+    list-style-type:none;
+    padding: 10px;
+}
+
+.leftMenu li a {
+    color: #507299;
+    text-decoration: none;
+}
+
+.leftMenu li:hover {
+    background-color: #e1e5eb;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    padding-top: 60px;
+}
+
+.firstRightMenu {
+    width: 140px;
+    background-color: white;    
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    color: rgb(58, 58, 58);
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.firstRightMenu p {
+    background-color: #edeef0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.firstRightMenu p::selection {
+    background-color: #e1e5eb;
+    color: green;
+}
+
+.secondRightMenu {
+    width: 140px;
+    background-color: white;    
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    color: rgb(58, 58, 58);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.secondRightMenu p {
+    background-color: #edeef0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.secondRightMenu h4 {
+    width: 100px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.secondRightMenu b {
+    font-weight: bold;    
+}
+
+.secondRightMenu b::selection {
+    background-color: #e1e5eb;
+    color: green;
+}
+
+.secondRightMenu p::selection {
+    background-color: #e1e5eb;
+    color: green;
+}
+
+footer {
+    text-align: center;
+    color:rgb(120, 120, 120);
+    height: auto;
+    font-family: Calibri;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
