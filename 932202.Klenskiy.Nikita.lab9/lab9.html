@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Task №9</title>
+	<link rel="stylesheet" type="text/css" href="lab9.css">
+</head>
+
+<body>
+	<div id="calc">
+		<table>
+			<tr>
+				<td colspan="5" id="display"><input type="text" value="" readonly></td>
+			</tr>
+			<tr>
+				<td><button class="lit">7</button></td>
+				<td><button class="lit">8</button></td>
+				<td><button class="lit">9</button></td>
+				<td><button class="operation">/</button></td>
+				<td><button class="control" id="clear">C</button></td>
+			</tr>
+			<tr>
+				<td><button class="lit">4</button></td>
+				<td><button class="lit">5</button></td>
+				<td><button class="lit">6</button></td>
+				<td><button class="operation">*</button></td>
+				<td><button class="control" id="delete">←</button></td>
+			</tr>
+			<tr>
+				<td><button class="lit">1</button></td>
+				<td><button class="lit">2</button></td>
+				<td><button class="lit">3</button></td>
+				<td><button class="operation">-</button></td>
+				<td rowspan="2"><button class="control" id="calculate">=</button></td>
+			</tr>
+			<tr>
+				<td colspan="2"><button class="lit">0</button></td>
+				<td><button id="point">.</button></td>
+				<td><button class="operation">+</button></td>
+			</tr>
+		</table>
+	</div>
+	<script src="lab9.js"></script>
+</body>
