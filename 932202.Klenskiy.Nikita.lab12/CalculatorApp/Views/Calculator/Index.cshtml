@@ -1,0 +1,40 @@
+@model CalculatorApp.Models.CalculatorModel
+
+<h2>Калькулятор</h2>
+
+<form method="post" asp-action="Calculate">
+    <div>
+        <label for="FirstNumber">Первое число</label>
+        <input type="number" asp-for="FirstNumber" class="form-control" step="any" />
+    </div>
+    <div>
+        <label for="SecondNumber">Второе число</label>
+        <input type="number" asp-for="SecondNumber" class="form-control" step="any" />
+    </div>
+    <div>
+        <label for="Operation">Операция</label>
+        <select asp-for="Operation" class="form-control">
+            <option value="Add">Сложение</option>
+            <option value="Subtract">Вычитание</option>
+            <option value="Multiply">Умножение</option>
+            <option value="Divide">Деление</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Выполнить</button>
+</form>
+
+@if (Model != null)
+{
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="alert alert-danger mt-2">
+            @Model.ErrorMessage
+        </div>
+    }
+    else if (Model.Result.HasValue)
+    {
+        <div class="alert alert-success mt-2">
+            Результат: @Model.Result
+        </div>
+    }
+}
